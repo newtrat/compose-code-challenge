@@ -24,13 +24,15 @@
     <partial name="step-1"></partial>
     <partial name="step-2"></partial>
 
-    <!-- This looks like a good place for an edge include. -->
+    <netlify-edge-include href="https://compose-challenge.netlify.app/partials/add-image-cdn"></netlify-edge-include>
 
     <section>
-      <netlify-edge-include href="https://compose-challenge.netlify.app/partials/add-image-cdn"></netlify-edge-include>
+      <img src="/.netlify/images/?url=/images/bay-bridge.jpg" alt="A photo of the Bay Bridge in San Francisco" />
+      <img src="/.netlify/images/?url=/images/bay-bridge.jpg&width=200"
+        alt="A photo of the Bay Bridge in San Francisco" />
     </section>
 
-    <!-- This looks like another good place for an edge include! -->
+    <netlify-edge-include href="https://compose-challenge.netlify.app/partials/add-blob-storage"></netlify-edge-include>
   </main>
 
   <!-- TODO: Extra credit: Why not add a global branded footer to the site? -->
